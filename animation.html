@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		
+
+		#square1{
+
+
+			width: 100px;
+			height: 100px;
+			background-color: limegreen;
+			position: absolute;
+
+			animation-name: moving;
+			animation-duration: 2s;
+			animation-iteration-count: infinite;
+
+
+		}
+		@keyframes moving{
+			0%{
+				left: 800px;
+				bottom: 100px}
+
+			50%{
+				left: 0px;
+				bottom: 100px;
+
+			}
+
+			100%{
+				left: 1000px;
+				bottom: 500px;
+				background-color: magenta ;}
+		}
+	</style>
+</head>
+<body>
+<div id="square1"></div>
+</body>
+</html>
