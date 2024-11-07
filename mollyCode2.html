@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+
+	<style type="text/css">
+		.whitekey{
+			width:100px;
+			height:300px;
+			border:1px solid black;
+			display:inline-block;
+			z-index: 0;
+			position: relative;
+			left:30px;
+		
+		}
+
+		.blackkey{
+			margin:0px;
+/*			top:-50px;*/
+			z-index: 10;
+			position: absolute;
+/*			left:-20px;*/
+			width:50px;
+			height:200px;
+			background-color:black;
+			display:inline-block;
+/*			position: fixed;*/
+/*          top: 8px;*/
+		}
+	</style>
+</head>
+<body>
+
+	<audio id=cNote1 src="cNoteTest.m4a"></audio>
+    <audio id= dNote2 scr="D.m4a"></audio>
+
+
+	<div id="ckey1" class='whitekey'></div>
+	<div id="dflatkey1" class="blackkey"></div>
+	<div id="dkey1" class='whitekey'></div>
+	<div id="eflatkey1" class="blackkey"></div>
+	<div id="ekey1" class='whitekey'></div>
+	<div id="fkey1" class='whitekey'></div>
+	<div id="gflatkey1" class='blackkey'></div>
+	<div id="gkey1" class='whitekey'></div>
+	<div id="aflatkey1" class='blackkey'></div>
+	<div id="akey1" class='whitekey'></div>
+	<div id="bflatkey1" class='blackkey'></div>
+	<div id="bkey1" class='whitekey'></div>
+	<div id="ckey2" class='whitekey'></div>
+
+
+	
+
+<script type="text/javascript">
+	
+
+	ckey1.addEventListener("click", function(){
+		cNote1.play()
+
+	})
+dkey1.addEventListener("click", function(){
+		dNote2.play()
+	})
+</script>
+</body>
+</html>
