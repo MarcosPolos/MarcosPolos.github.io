@@ -11,7 +11,7 @@
 			height:300px;
 			border:1px solid black;
 			display:inline-block;
-		
+		    cursor: pointer;
 		}
 
 		.blackkey{
@@ -25,6 +25,15 @@
 	</style>
 </head>
 <body>
+
+	<audio id="cnote" src="cNoteTest.m4a"></audio>
+	<audio id="dnote" src="D.m4a."></audio>
+	<audio id="enote" src="E.m4a."></audio>
+	<audio id="fnote" src="F.m4a."></audio>
+	<audio id="gnote" src="G.m4a."></audio>
+<audio id="anote" src="A.m4a."></audio>
+<audio id="bnote" src="B.m4a."></audio>
+<audio id="highcnote" src="High c.m4a."></audio>
 
 	<div id="c-key1" class='whitekey'></div>
 	<div id="d-flat-key1" class="blackkey"></div>
@@ -41,7 +50,27 @@
 	<div id="c-key2" class='whitekey'></div>
 
 
-	
+	<script type="text/javascript">
+		
+
+
+		 
+       
+        const div = document.getElementById('c-key1');
+        const cnote = document.getElementById('cnote');
+        const div = document.getElementById('d-key1');
+        const cnote = document.getElementById('dnote');
+      
+
+
+
+        
+        div.addEventListener('click', function() {
+            cnote.play();
+
+        });
+  
+	</script>
 
 
 </body>

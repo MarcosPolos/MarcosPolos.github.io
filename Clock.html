@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Play Sound on Click</title>
+</head>
+<body>
+    <!-- The div that will trigger the sound when clicked -->
+    <div id="clickable-div" style="width: 200px; height: 100px; background-color: lightblue; cursor: pointer;">
+        Click me to play a sound!
+    </div>
+
+    <!-- Hidden audio element -->
+    <audio id="sound" src="cNoteTest.m4a"></audio>
+
+    <!-- JavaScript directly in the HTML -->
+    <script type="text/javascript">
+        // Wait for the DOM to load before running the script
+        document.addEventListener('DOMContentLoaded', function() {
+            // Get the div and audio elements
+            const div = document.getElementById('clickable-div');
+            const sound = document.getElementById('sound');
+
+            // Add a click event listener to the div
+            div.addEventListener('click', function() {
+                sound.play();
+            });
+        });
+    </script>
+</body>
+</html>
