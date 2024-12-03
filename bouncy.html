@@ -10,11 +10,12 @@
 
 		width:100px;
           height:100px;
-          background-color: cyan;
+          background-color: darkcyan;
           position: absolute;
           background-size: cover;
           background-repeat: no-repeat;
           border-radius: 50%;
+          transition: 0.2s;
 
 }
 #bouncy2{
@@ -26,6 +27,7 @@
           background-size: cover;
           background-repeat: no-repeat;
           border-radius: 50%;
+          transition: 0.2s;
 
 }
 #bouncy3{
@@ -37,6 +39,7 @@
           background-size: cover;
           background-repeat: no-repeat;
           border-radius: 50%;
+          transition: 0.2s;
 
 }
 #bouncy4{
@@ -48,6 +51,7 @@
           background-size: cover;
           background-repeat: no-repeat;
           border-radius: 50%;
+          transition: 0.2s;
 
 }
 #bouncy5{
@@ -59,6 +63,7 @@
           background-size: cover;
           background-repeat: no-repeat;
           border-radius: 50%;
+          transition: 0.2s;
 
 }
 #bouncy6{
@@ -70,6 +75,7 @@
           background-size: cover;
           background-repeat: no-repeat;
           border-radius: 50%;
+          transition: 0.2s;
 
 }
 #bouncy7{
@@ -81,6 +87,7 @@
           background-size: cover;
           background-repeat: no-repeat;
           border-radius: 50%;
+          transition: 0.2s;
 
 }
 #bouncy8{
@@ -92,6 +99,7 @@
           background-size: cover;
           background-repeat: no-repeat;
           border-radius: 50%;
+          transition: 0.2s;
 
 }
 #bouncy9{
@@ -103,6 +111,7 @@
           background-size: cover;
           background-repeat: no-repeat;
           border-radius: 50%;
+          transition: 0.2s;
 
 }
 #bouncy10{
@@ -114,6 +123,7 @@
           background-size: cover;
           background-repeat: no-repeat;
           border-radius: 50%;
+          transition: 0.2s;
 
 }
 #bouncy11{
@@ -125,6 +135,7 @@
           background-size: cover;
           background-repeat: no-repeat;
           border-radius: 50%;
+          transition: 0.2s;
 
 }
 #bouncy12{
@@ -136,6 +147,7 @@
           background-size: cover;
           background-repeat: no-repeat;
           border-radius: 50%;
+          transition: 0.2s;
 
 }
 </style>
@@ -159,36 +171,54 @@
 
 		function move (){
 			console.log(Math.random())
-			bouncy1.style.left = Math.random()*1280+ "px";
-			bouncy1.style.top = Math.random()*1280+ "px";
-			bouncy2.style.left = Math.random()*1280+ "px";
-			bouncy2.style.top = Math.random()*1280+ "px";
-			bouncy3.style.left = Math.random()*1280+ "px";
-			bouncy3.style.top = Math.random()*1280+ "px";
-			bouncy4.style.left = Math.random()*1280+ "px";
-			bouncy4.style.top = Math.random()*1280+ "px";
-			bouncy5.style.left = Math.random()*1280+ "px";
-			bouncy5.style.top = Math.random()*1280+ "px";
-			bouncy6.style.left = Math.random()*1280+ "px";
-			bouncy6.style.top = Math.random()*1280+ "px";
-			bouncy7.style.left = Math.random()*1280+ "px";
-			bouncy7.style.top = Math.random()*1280+ "px";
-			bouncy8.style.left = Math.random()*1280+ "px";
-			bouncy8.style.top = Math.random()*1280+ "px";
-			bouncy9.style.left = Math.random()*1280+ "px";
-			bouncy9.style.top = Math.random()*1280+ "px";
-			bouncy10.style.left = Math.random()*1280+ "px";
-			bouncy10.style.top = Math.random()*1280+ "px";
-			bouncy11.style.left = Math.random()*1280+ "px";
-			bouncy11.style.top = Math.random()*1280+ "px";
-			bouncy12.style.left = Math.random()*1280+ "px";
-			bouncy12.style.top = Math.random()*1280+ "px";
+			bouncy1.style.left = Math.random()*1000+ "px";
+			bouncy1.style.top = Math.random()*1000+ "px";
+			bouncy2.style.left = Math.random()*1000+ "px";
+			bouncy2.style.top = Math.random()*1000+ "px";
+			bouncy3.style.left = Math.random()*1000+ "px";
+			bouncy3.style.top = Math.random()*1000+ "px";
+			bouncy4.style.left = Math.random()*1000+ "px";
+			bouncy4.style.top = Math.random()*1000+ "px";
+			bouncy5.style.left = Math.random()*1000+ "px";
+			bouncy5.style.top = Math.random()*1000+ "px";
+			bouncy6.style.left = Math.random()*1000+ "px";
+			bouncy6.style.top = Math.random()*1000+ "px";
+			bouncy7.style.left = Math.random()*1000+ "px";
+			bouncy7.style.top = Math.random()*1000+ "px";
+			bouncy8.style.left = Math.random()*1000+ "px";
+			bouncy8.style.top = Math.random()*1000+ "px";
+			bouncy9.style.left = Math.random()*1000+ "px";
+			bouncy9.style.top = Math.random()*1000+ "px";
+			bouncy10.style.left = Math.random()*1000+ "px";
+			bouncy10.style.top = Math.random()*1000+ "px";
+			bouncy11.style.left = Math.random()*1000+ "px";
+			bouncy11.style.top = Math.random()*1000+ "px";
+			bouncy12.style.left = Math.random()*1000+ "px";
+			bouncy12.style.top = Math.random()*1000+ "px";
 
 
 
 		}
+function colorchange(){
+	let r = Math.random()*255
+	let g = Math.random()*255
+	let b = Math.random()*255
+	bouncy1.style.backgroundColor = "rgb("+r+","+g+","+b+")"
+	bouncy2.style.backgroundColor = "rgb("+r+","+g+","+b+")"
+	bouncy3.style.backgroundColor = "rgb("+r+","+g+","+b+")"
+	bouncy4.style.backgroundColor = "rgb("+r+","+g+","+b+")"
+	bouncy5.style.backgroundColor = "rgb("+r+","+g+","+b+")"
+	bouncy6.style.backgroundColor = "rgb("+r+","+g+","+b+")"
+	bouncy7.style.backgroundColor = "rgb("+r+","+g+","+b+")"
+	bouncy8.style.backgroundColor = "rgb("+r+","+g+","+b+")"
+	bouncy9.style.backgroundColor = "rgb("+r+","+g+","+b+")"
+	bouncy10.style.backgroundColor = "rgb("+r+","+g+","+b+")"
+	bouncy11.style.backgroundColor = "rgb("+r+","+g+","+b+")"
+	bouncy12.style.backgroundColor = "rgb("+r+","+g+","+b+")"
+}
 
-setInterval(move, 400)
+setInterval(move, 200)
+setInterval(colorchange,200)
 
 	</script>
 </body>
