@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		.slot{
+			width: 100px;
+			height: 100px;
+			display: inline-block;
+			border: 1px solid black;
+			margin: 4px;
+					}
+		#handle{
+			width: 25px;
+			height: 75px;
+			display: inline-block;
+			border: 1px solid black;
+			margin: 4px;
+
+					}
+		#scoreboard{
+			
+			width: 100px;
+			height: 100px;
+			display: inline-block;
+			border: 1px solid black;
+			margin: 4px;
+			
+
+		}
+	</style>
+</head>
+<body>
+<div class="slot" id="slot1"></div>
+<div class="slot" id="slot2"></div>
+<div class="slot" id="slot3"></div>
+<div id="handle"></div>
+<div id="scoreboard"></div>
+
+<script type="text/javascript">
+	
+    let score = 0 
+
+	let colors = ["red","orange","yellow","green","blue","navy","purple"]
+
+	console.log(colors.length)
+
+	handle.addEventListener("click", function(){
+		let random1 = Math.floor(Math.random()*colors.length)
+
+		let random2 = Math.floor(Math.random()*colors.length)
+
+		let random3 = Math.floor(Math.random()*colors.length)
+
+		slot1.style.backgroundColor = colors[random1]
+		slot2.style.backgroundColor = colors[random2]
+		slot3.style.backgroundColor = colors[random3]
+
+if (random1==random2 && random2==random3){
+			score = score + 100
+			scoreboard.innerText = score;
+			
+		}	
+else if (random1==random2) {
+score = score + 3
+scoreboard.innerText = score;
+	}
+	else if (random2==random3) {
+	score = score + 3
+	scoreboard.innerText = score;
+	}
+	else if (random1==random3) {
+	score = score + 3
+	}
+	scoreboard.innerText = score;
+})
+	
+
+	
+</script>
+</body>
+</html>

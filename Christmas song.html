@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<body style="background-color:black;"> 
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+<style type="text/css">
+	
+
+	#play{
+		width: 100px;
+		height: 100px;
+		background-color: red;
+		border-radius: 50%;
+		background-image: url("https://cdn-icons-png.flaticon.com/512/27/27185.png");
+		background-size: contain;
+		left: 670px;
+		top: 200;
+		
+
+	}
+</style>
+
+</head>
+
+<body>
+	<audio id="mariah" src="Mariah.mp3"></audio>
+<div id="play"></div>
+
+<script type="text/javascript">
+	
+
+	let counter = 0;
+
+	play.addEventListener("click",
+		function(){
+
+			counter=counter+1;
+
+			if(counter%2==0){
+
+				mariah.pause()
+
+			}
+	
+else if(counter%2==1){
+	mariah.play()
+
+}
+		})
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
