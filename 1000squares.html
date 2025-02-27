@@ -21,12 +21,13 @@ function makeSquare(){
 	let square = document.createElement("div")
 	document.body.appendChild(square)
 	square.classList.add("square")
-	counter = counter + 1
-	square.innerText = counter
+	square.style.top="0px"
+	square.style.left="0px"
 } 
-setInterval(makeSquare, 1000)
+for(let i=0; i<1000; i=i+1){
+	makeSquare()
 
-
+}
 
 </script>
 <class id=""></div>

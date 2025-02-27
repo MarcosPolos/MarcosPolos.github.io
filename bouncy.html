@@ -15,7 +15,17 @@
 			text-align: center;
 			font-size: 65px;
 	}
+.bouncy{
+	width:100px;
+          height:100px;
+          background-color: orange;
+          position: absolute;
+          background-size: cover;
+          background-repeat: no-repeat;
+          border-radius: 50%;
+          transition: 1s;
 
+}
 #bouncy1{
 
 		width:100px;
@@ -187,6 +197,19 @@
 
 </head>
 <body>
+	<div class="bouncy"></div>
+	<div class="bouncy"></div>
+	<div class="bouncy"></div>
+	<div class="bouncy"></div>
+	<div class="bouncy"></div>
+	<div class="bouncy"></div>
+	<div class="bouncy"></div>
+	<div class="bouncy"></div>
+	<div class="bouncy"></div>
+	<div class="bouncy"></div>
+	<div class="bouncy"></div>
+	<div class="bouncy"></div>
+
 	<div id="bouncy1"></div>
 	<div id="bouncy2"></div>
 	<div id="bouncy3"></div>
@@ -206,7 +229,7 @@
 
 		function move (){
 			console.log(Math.random())
-			bouncy1.style.left = Math.random()*1200+ "px";
+			bouncy.style.left = Math.random()*1200+ "px";
 			bouncy1.style.top = Math.random()*1200+ "px";
 			bouncy2.style.left = Math.random()*1200+ "px";
 			bouncy2.style.top = Math.random()*1200+ "px";
@@ -238,6 +261,7 @@ function colorchange(){
 	let r = Math.random()*255
 	let g = Math.random()*255
 	let b = Math.random()*255
+	bouncy.style.backgroundColor = "rgb("+r+","+g+","+b+")"
 	bouncy1.style.backgroundColor = "rgb("+r+","+g+","+b+")"
 	bouncy2.style.backgroundColor = "rgb("+r+","+g+","+b+")"
 	bouncy3.style.backgroundColor = "rgb("+r+","+g+","+b+")"
@@ -258,7 +282,7 @@ setInterval(colorchange,3000)
 let lightswitch =true
 	bouncy1.addEventListener("click", function (){
 		if (lightswitch==true){
-		bouncy1.style.backgroundColor="cyan"
+		bouncy1.style.backgroundColor="white"
 		lightswitch = false
 	}
 

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<body style="background-color:black;"> 
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet"><title></title>
+
+<style type="text/css">
+div{
+		z-index: 6;
+		font-family: "Great Vibes", system ui;
+			font-weight: 500;
+			font-style: normal;
+			text-align: center;
+			font-size: 65px;
+
+	}
+
+	.confetti{
+
+width: 10px;
+height: 10px;
+background-color: indianred;
+position: absolute;
+
+	}
+	#title{
+		width: 500px;
+		height: 160px;
+		border-radius: 10%;
+		background-color: red;
+		position:relative ;
+		z-index: 5;
+		top: 100px;
+	}
+</style>
+</head>
+
+<center><div id="title">Happy Valentine's Day!</div></center>
+<body>
+<script type="text/javascript">
+
+function makeConfetti(){
+	let sprinkle = document.createElement("div")
+	document.body.appendChild(sprinkle)
+	sprinkle.classList.add("confetti")
+	sprinkle.style.top="0px"
+	sprinkle.style.left="0px"
+
+ function fall(){
+    if (parseInt(sprinkle.style.top)>1000)
+    	{sprinkle.style.top="-100px"}
+    else{
+sprinkle.style.top = parseInt(sprinkle.style.top) + Math.random()*100+"px"
+ 	sprinkle.style.left = Math.random()*2000+"px"
+    }
+ 
+ }
+ setInterval(fall,80)
+ 
+
+let colors = ["red","pink","magenta","DeepPink"]
+
+let random = Math.floor(Math.random()*colors.length)
+
+		sprinkle.style.backgroundColor = colors[random]
+
+sprinkle.style.borderRadius = Math.random()*50+ "%";
+
+let colors2 = ["blue","cyan","navy","indigo"]
+let random2 = Math.floor(Math.random()*colors2.length)
+let counter = 0;
+
+title.addEventListener("click", function(){
+counter=counter+1;
+if(counter%2==0){
+	
+		sprinkle.style.backgroundColor = colors[random]
+		title.style.backgroundColor = "red"
+	}
+	 else if(counter%2==1)	{
+		sprinkle.style.backgroundColor = colors2[random2]
+		title.style.backgroundColor = "blue"
+
+	}
+	else{
+sprinkle.style.backgroundColor = colors[random]
+		title.style.backgroundColor = "blue"}
+})
+
+}
+
+for(let i=0; i<1000; i=i+1){
+	makeConfetti()
+
+}
+
+
+
+</script>
+</body>
+</html>
